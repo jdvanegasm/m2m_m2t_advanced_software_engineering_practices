@@ -1,3 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
-    name="miEmpresa" nsURI="http://www.example.org/miEmpresa" nsPrefix="miEmpresa"/>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="miEmpresa" nsURI="http://www.example.org/miEmpresa" nsPrefix="miEmpresa">
+  <eClassifiers xsi:type="ecore:EClass" name="Desarrollador" eSuperTypes="#//Empleado">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="lenguajePrincipal" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Gerente" eSuperTypes="#//Empleado">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="equipo" upperBound="-1"
+        eType="#//Desarrollador" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Empleado" abstract="true">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" ordered="false" unique="false"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt" changeable="false"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="nombre" ordered="false"
+        unique="false" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
+        changeable="false"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Empresa">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="listaEmpleados" upperBound="-1"
+        eType="#//Empleado" containment="true"/>
+  </eClassifiers>
+</ecore:EPackage>

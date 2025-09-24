@@ -1,11 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/MiEmpresa/src-gen" creationIcons="false" editDirectory="/MiEmpresa.edit/src-gen"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel"
+    modelDirectory="/MiEmpresa/src-gen" creationIcons="false" editDirectory="/MiEmpresa.edit/src-gen"
     editorDirectory="/MiEmpresa.editor/src-gen" modelPluginID="MiEmpresa" modelName="MiEmpresa"
     rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container" codeFormatting="true"
     importerID="org.eclipse.emf.importer.ecore" complianceLevel="21.0" copyrightFields="false"
     operationReflection="true" importOrganizing="true">
   <foreignModel>miEmpresa.ecore</foreignModel>
   <testsDirectory xsi:nil="true"/>
-  <genPackages prefix="MiEmpresa" disposableProviderFactory="true" ecorePackage="miEmpresa.ecore#/"/>
+  <genPackages prefix="MiEmpresa" disposableProviderFactory="true" ecorePackage="miEmpresa.ecore#/">
+    <genClasses ecoreClass="miEmpresa.ecore#//Desarrollador">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute miEmpresa.ecore#//Desarrollador/lenguajePrincipal"/>
+    </genClasses>
+    <genClasses ecoreClass="miEmpresa.ecore#//Gerente">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference miEmpresa.ecore#//Gerente/equipo"/>
+    </genClasses>
+    <genClasses image="false" ecoreClass="miEmpresa.ecore#//Empleado">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute miEmpresa.ecore#//Empleado/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute miEmpresa.ecore#//Empleado/nombre"/>
+    </genClasses>
+    <genClasses ecoreClass="miEmpresa.ecore#//Empresa">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference miEmpresa.ecore#//Empresa/listaEmpleados"/>
+    </genClasses>
+  </genPackages>
 </genmodel:GenModel>
