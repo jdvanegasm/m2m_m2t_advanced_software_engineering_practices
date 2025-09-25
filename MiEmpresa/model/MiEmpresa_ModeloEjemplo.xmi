@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<miEmpresa:Empresa
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:miEmpresa="http://www.example.org/miEmpresa">
+  <listaEmpleados
+      xsi:type="miEmpresa:Gerente"
+      id="1"
+      nombre="Juan">
+    <equipo
+        id="2"
+        nombre="Pedro"
+        lenguajePrincipal="Java"/>
+  </listaEmpleados>
+</miEmpresa:Empresa>

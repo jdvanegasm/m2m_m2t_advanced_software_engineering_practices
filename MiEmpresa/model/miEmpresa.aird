@@ -3,6 +3,12 @@
   <viewpoint:DAnalysis uid="_4-veUJmYEfCqVPwGsxQnsA" selectedViews="_83BXcJmYEfCqVPwGsxQnsA" version="15.4.1.202403191723">
     <semanticResources>miEmpresa.ecore</semanticResources>
     <semanticResources>miEmpresa.genmodel</semanticResources>
+    <semanticResources>platform:/plugin/org.eclipse.emf.ecore/model/Ecore.xsd</semanticResources>
+    <semanticResources>bundleentry://825.fwk1148916163/cache/www.w3.org/2001/XMLSchema-instance.xsd</semanticResources>
+    <semanticResources>bundleentry://825.fwk1148916163/cache/www.w3.org/2001/XMLSchema.xsd</semanticResources>
+    <semanticResources>http://www.w3.org/2001/xml.xsd</semanticResources>
+    <semanticResources>bundleentry://825.fwk1148916163/cache/www.w3.org/2001/MagicXMLSchema.xsd</semanticResources>
+    <semanticResources>MiEmpresa_ModeloEjemplo.xmi</semanticResources>
     <ownedViews xmi:type="viewpoint:DView" uid="_83BXcJmYEfCqVPwGsxQnsA">
       <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']"/>
       <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_8599wJmYEfCqVPwGsxQnsA" name="miEmpresa" repPath="#_84unoJmYEfCqVPwGsxQnsA" changeId="1758755493746">

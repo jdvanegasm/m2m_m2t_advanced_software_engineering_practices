@@ -9,11 +9,9 @@
         eType="#//Desarrollador" containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Empleado" abstract="true">
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" ordered="false" unique="false"
-        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt" changeable="false"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="nombre" ordered="false"
-        unique="false" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"
-        changeable="false"/>
+        unique="false" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Empresa">
     <eStructuralFeatures xsi:type="ecore:EReference" name="listaEmpleados" upperBound="-1"
